@@ -46,6 +46,37 @@
 </ol>
 </div "aboutme">
 
+<BR>
+
+  <label for="nom">Comment-vous appelez-vous?</label>
+  <input type="text" id="nom" name="nom"><br><br>
+  <button onclick="first()">Bonjour...</button>
+
+<p id="holder"></p>
+
+<script>
+function first() {
+    let name =document.getElementById("nom").value;
+  	let text1= "Bonjour"
+	let text2= "!"
+	let text3= text1.concat(" ",name);
+	document.getElementById("holder").innerHTML = text3.concat(" ", text2);
+}
+</script>
+
+<BR>
+
+  <button onclick="aide()">Afficher l'aide</button>
+
+<p id="demo"></p>
+
+<script>
+function aide() {
+	document.getElementById("demo").innerHTML = "Ici, on va afficher l'aide.";
+}
+
+</script>
+
 <id="lien" footer>
   <p><a href="http://www.univ-paris3.fr/">Lien vers le site de Sorbonne Nouvelle.</a></p>
 </footer>
